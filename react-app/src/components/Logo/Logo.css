@@ -1,0 +1,14 @@
+.logo {
+    margin:0 auto;
+}
+
+.logo img {
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+    
+}
+
+/* .logo img:hover {
+    border:1px solid #4cc9f0;
+} */

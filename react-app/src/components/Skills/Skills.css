@@ -1,0 +1,112 @@
+.skills {
+    background-image: url("../../../public/imgs/home.jpg");
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    font-family: "voyager";
+    color: #edf6f9;
+    align-items: center;
+}
+
+
+
+.skills-header {
+    font-size: 40px;
+    margin-top: 120px;
+    margin-bottom:80px
+}
+
+.skills-container {
+    display:flex;   
+}
+.skills-data {
+    display:flex;
+    flex-direction: column;
+    color: #edf6f9;
+    margin: 50px 20px 0 50px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.skills-data--names {
+    margin-bottom: 15px;
+}
+
+.my {
+   
+    color: #4ccaf0d0;
+}
+
+.skills-bars {
+    width:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #edf6f9;
+    margin: 50px 0 50px 20px;
+    
+}
+
+.skills-bar--progress {
+    background-color: rgba(211, 211, 211, 0.212);
+    color: #4ccaf0d0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.skills-bar--html {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:90%;
+    height:18px;
+}
+
+.skills-bar--css {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:75%;
+    height:18px;
+}
+
+.skills-bar--js {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:75%;
+    height:18px;
+}
+
+.skills-bar--react {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:50%;
+    height:18px;
+}
+
+.skills-bar--github {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    width:35%;
+    height:18px;
+}
+
+.skills-languages {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: grey; */
+ 
+}
+.skills-language--link {
+    width: 30px;
+   
+  
+    margin-right: 20px;
+    
+}
+
+.svg {
+    height:50px;
+}

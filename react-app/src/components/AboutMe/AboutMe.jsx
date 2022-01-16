@@ -2,7 +2,7 @@ import "./AboutMe.css"
 
 export const AboutMe = () => {
     return (
-        <div className="block">
+        <div className="about-me">
             About Me
            
         </div>

@@ -1,4 +1,4 @@
-
+import Typical from 'react-typical'
 import { NavLink } from "react-router-dom";
 import "./Home.css"
 
@@ -9,7 +9,9 @@ export const Home = () => {
                 <img src="/imgs/galaxy.jpg" alt="galaxy.jpg" />
             </div> 
             <div className="container-description">
-                <p className="heading-paragraph">Hello traveler ...</p>
+                <p className="heading-paragraph">
+                    <Typical className="auto-type" steps={["Hello traveler ...", 1500]} loop={Infinity} wrapper="b"/>
+                </p>
                 <div className="headings">
                     <p className="heading2">Radu</p>
                     <p className="heading2">Padurariu</p>

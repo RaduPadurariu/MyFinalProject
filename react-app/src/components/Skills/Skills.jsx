@@ -1,7 +1,10 @@
-
-
+import IconHtml from "../Icons/html.svg"
+import IconCss from "../Icons/css.svg"
+import IconJs from "../Icons/javascript.svg"
+import IconReact from "../Icons/react.svg"
 
 import "./Skills.css"
+import { NavLink } from "react-router-dom"
 
 export const Skills = () => {
     return (
@@ -51,19 +54,21 @@ export const Skills = () => {
                 </div>
             </div>
             <div className="skills-languages">
-                <div>
-                   
-                </div>
-                <div>
-                    <img className="skills-language--link" src={"https://cdn.worldvectorlogo.com/logos/css-3.svg"} alt="logo"/>
-                </div>
-                <div>
-                    <img className="skills-language--link" src={"https://cdn.worldvectorlogo.com/logos/javascript-1.svg"} alt="logo"/>
-                </div>
-                <div>
-                    <img className="skills-language--link" src={"https://cdn.worldvectorlogo.com/logos/react-2.svg"} alt="logo" />
-                </div>
-                
+                <NavLink to={{pathname:"https://developer.mozilla.org/en-US/docs/Glossary/HTML5"}} target="_blank">
+                    <img className="icons" height={50} src={IconHtml} alt="logo" />             
+                </NavLink>
+
+                <NavLink to={{pathname:"https://www.w3schools.com/css/"}} target="_blank">
+                    <img className="icons" height={50} src={IconCss} alt="logo" />             
+                </NavLink>
+               
+                <NavLink to={{pathname:"https://developer.mozilla.org/en-US/docs/Web/JavaScript"}} target="_blank">
+                    <img className="icons" height={50} src={IconJs} alt="logo" />             
+                </NavLink>
+
+                <NavLink to={{pathname:"https://reactjs.org/"}} target="_blank">
+                    <img className="icons" height={50} src={IconReact} alt="logo" />           
+                </NavLink>
             </div>
         </div>
     )

@@ -1,7 +1,152 @@
 .projects {
-    display:flex;
-    align-items: center;
-    text-align: center;
     background-image: url("../../../public/imgs/home.jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
     flex:1;
+    flex-direction: column;
+    font-family: "voyager";
+    color: #edf6f9;
+    align-items: center;
 }
+
+
+
+.projects-header {
+    font-size: 40px;
+   margin-top: 100px;
+}
+
+.my {
+   
+    color: #4ccaf0d0;
+}
+.projects-container {
+    display:flex;   
+    margin-top: 200px;
+}
+
+.projects-myProjects {
+    border:2px solid #4ccaf0d0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 400px;
+    margin:0 100px;
+}
+
+.projects-image--container {
+    background-color: black;
+    border-radius: 25px;
+}
+
+.projects-image--planetary {
+    width: 250px;
+    height: 250px;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url("../../../public/imgs/planet.jpg");
+    background-size: cover;
+    box-shadow: -25px -15px 60px 0.5px;
+    animation: spin 20s linear infinite;
+    margin-top:35px;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    100% {background-position:100%;}
+}
+
+.projects-image--idealMan {
+    width: 100%;
+    height:300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+.projects-image--gameSimulator {
+    width: 100%;
+    height:300px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.projects-title {
+    font-size: 23px;
+    color: #edf6f9;
+    margin:15px auto;
+    text-align: center;
+}
+
+.project-title--color1 {
+    color:#e76f51;
+}
+
+.project-title--color2 {
+    color:#4ccaf0d0;
+}
+
+.project-title--color3 {
+    color:#9d4edd;
+}
+
+
+
+
+.projects-description {
+    font-size: 17px;
+    font-family: 'helvetica';
+    background-color: #edf6f9;
+    color: black;
+    padding: 20px;
+    text-align: justify;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px ;
+}
+
+
+
+
+
+
+
+
+
+/* Eye animation in progress */
+
+/* .projects-image--proportions {
+    position:relative;
+}
+.eyes {
+    width:6px;
+    height:6px;
+    background-color: #edf6f9;
+    border-radius: 50%;
+    position:absolute;
+    left:192px;
+    top: 67px;
+    animation: blink 1s steps(1, end) infinite;
+} */
+
+/*@keyframes blink {
+    0% {
+      box-shadow: -20px -20px 50px 10px;
+      background-color: #edf6f9;
+    }
+    50% {
+        /* box-shadow: -20px -20px 20px 1px; */
+        /* background-color: lightcoral;
+    }
+    100% {
+        box-shadow: -20px -20px 50px 10px;
+        background-color: #edf6f9;
+    }
+  }// */

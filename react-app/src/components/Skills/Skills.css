@@ -6,25 +6,26 @@
     font-family: "voyager";
     color: #edf6f9;
     align-items: center;
+    justify-content: space-between;
 }
 
 
 
 .skills-header {
     font-size: 40px;
-    margin-top: 120px;
-    margin-bottom:80px
+   margin-top: 100px;
 }
 
 .skills-container {
     display:flex;   
+    margin-bottom: 200px;
 }
 .skills-data {
     display:flex;
     flex-direction: column;
     color: #edf6f9;
     margin: 50px 20px 0 50px;
-    text-align: right;
+    text-align: left;
     font-size: 20px;
 }
 
@@ -94,19 +95,12 @@
 }
 
 .skills-languages {
-    display: flex;
-    justify-content: space-around;
-    /* background-color: grey; */
- 
-}
-.skills-language--link {
-    width: 30px;
-   
-  
-    margin-right: 20px;
-    
+  display: flex;
+  margin-bottom: 30px;
 }
 
-.svg {
-    height:50px;
+
+.icons {
+    margin:0 25px;
 }
+

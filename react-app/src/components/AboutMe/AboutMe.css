@@ -1,8 +1,90 @@
 
-.about-me {
+.aboutMe {
+    background-color: white;
     display:flex;
-    align-items: center;
-    text-align: center;
-    background-image: url("../../../public/imgs/home.jpg");
     flex:1;
+    flex-direction: column;
+    font-family: "voyager";
+    color: black;
+    align-items: center;
+    font-size: 17px;
+  
+    
+}
+
+.aboutMe-header {
+    font-size: 40px;
+   margin-top: 100px;
+}
+
+.my1 {
+   color: darkorange;
+}
+.aboutMe-container {
+    display:flex;   
+    margin-top: 100px;
+    color:black;
+    font-family: 'helvetica';
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.aboutMe-description {
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    align-items: left;
+
+}
+
+.aboutMe-description--title {
+    margin:20px 0;
+    font-family: "voyager";
+}
+
+.aboutMe-description--title-coding{
+    color:darkblue;
+}
+.aboutMe-description--paragraph {
+    width:400px;
+    background-color: white;
+    color:rgb(24, 21, 21);
+    margin-bottom: 50px;
+}
+
+.aboutMe-description--downloadBtn {
+    color:black;
+    background-color: darkgrey;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: voyager;
+    border:2px solid #4ccaf0;
+    padding:10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.aboutMe-carousel {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.aboutMe-carousel--pic1 {
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+.aboutMe-carousel--Btn{
+    font-size: 60px;
+    font-family: "voyager";
+    color: #4ccaf0d0;
+    background-color: transparent;
+    border: none;
+    margin:20px;
+}
+
+.icons {
+    margin:0 25px;
 }

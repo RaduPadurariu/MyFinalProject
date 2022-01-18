@@ -6,9 +6,9 @@ export const Contact = () => {
             <div className="contact-header">Contact <span className="me"> Me</span></div>
             <div className="contact-form">
                 <div className="contact--label-container">
-                    <label className="label-name"  for="name"> Name -</label>
-                    <label className="label-email"   for="email"> Email -</label>
-                    <label className="label-message"  for="message"> Message -</label>
+                    <label className="label-name"  htmlFor="name"> Name -</label>
+                    <label className="label-email"   htmlFor="email"> Email -</label>
+                    <label className="label-message"  htmlFor="message"> Message -</label>
                 </div>
                 <div className="contact--input-container">
                     <input id="name" type="text" placeholder="type name"/>

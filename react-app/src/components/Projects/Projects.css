@@ -1,7 +1,5 @@
 .projects {
     background-image: url("../../../public/imgs/home.jpg");
-    background-position: center;
-    background-size: cover;
     display:flex;
     flex:1;
     flex-direction: column;

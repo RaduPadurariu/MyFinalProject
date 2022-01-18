@@ -1,12 +1,16 @@
 
 .aboutMe {
-    background-color: white;
+    background-image: url("../../../public/imgs/lightblue.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-color: white; */
     display:flex;
     flex:1;
     flex-direction: column;
     font-family: "voyager";
     color: black;
     align-items: center;
+    justify-content: space-between;
     font-size: 17px;
   
     
@@ -20,28 +24,28 @@
 .my1 {
    color: darkorange;
 }
+
 .aboutMe-container {
     display:flex;   
-    margin-top: 100px;
     color:black;
     font-family: 'helvetica';
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width:100%;
 }
 
 .aboutMe-description {
-    border-radius: 10px;
     display:flex;
     flex-direction: column;
-    width:40%;
+    /* width:40%; */
     align-items: left;
 
 }
 
 .aboutMe-description--title {
-    margin:20px 0;
+    margin:30px 0;
     font-family: "voyager";
+    font-size: 25px;
 }
 
 .aboutMe-description--title-coding{
@@ -49,7 +53,7 @@
 }
 .aboutMe-description--paragraph {
     width:400px;
-    background-color: white;
+    /* background-color: white; */
     color:rgb(24, 21, 21);
     margin-bottom: 50px;
 }
@@ -60,12 +64,39 @@
     font-size: 20px;
     font-weight: bold;
     font-family: voyager;
-    border:2px solid #4ccaf0;
+    border:2px solid black;
     padding:10px;
     border-radius: 8px;
     text-decoration: none;
 }
+
+.aboutMe-description--downloadBtn:hover {
+    background-color: lightgrey;
+  
+ }
+
+
+
+
+
+
+
+
+
 .aboutMe-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMe-carousel--title {
+    margin:25px 0 25px 165px;
+    font-family: "voyager";
+    font-size: 12px;
+
+}
+
+.aboutMe-carousel--container {
     display: flex;
     align-items: center;
     width: 40%;
@@ -77,14 +108,19 @@
 }
 
 .aboutMe-carousel--Btn{
-    font-size: 60px;
+    font-size: 18px;
     font-family: "voyager";
-    color: #4ccaf0d0;
+    color: black;
     background-color: transparent;
     border: none;
     margin:20px;
+    font-weight: bold;
 }
 
+.aboutMe-social {
+    display: flex;
+    margin-bottom: 30px;
+  }
 .icons {
     margin:0 25px;
 }

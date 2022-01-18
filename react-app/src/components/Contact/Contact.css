@@ -62,7 +62,7 @@
 }
 
 .contact--input-container input, textarea{
-    margin-bottom: 25px;
+    /* margin-bottom: px; */
     padding: 15px 10px;
     border-radius: 8px;
     background: lightgrey;
@@ -106,3 +106,29 @@
     background-color: lightgrey;
   
  }
+
+/* validations */
+
+.contact--validation-container{
+    height:25px;
+    }
+
+.contact--validation{
+    color: rgb(235, 106, 106);
+    font-size: 12px;
+    text-align: left;
+    margin-top: 4px;
+    }
+.contact--validation-none {
+    display:none;
+}
+
+.contact--validation-total{
+    color:lightgreen;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 4px;
+    }
+.contact--validation-send {
+    display:none;
+}

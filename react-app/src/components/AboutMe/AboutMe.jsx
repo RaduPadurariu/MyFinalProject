@@ -3,9 +3,18 @@ import "./AboutMe.css";
 import IconFacebook from "../Icons/facebook.svg";
 import IconLinkedin from "../Icons/linkedin.svg";
 import IconGithub from "../Icons/github.svg";
+import {useEffect, useState} from "react";
 
 
 export const AboutMe = () => {
+    const [i, changeIndex] = useState(1);
+    console.log(i);
+
+    // useEffect = (() => {
+    //     console.log('test');
+    // }, []);
+
+
     return (
         <div className="aboutMe">
 
@@ -38,7 +47,7 @@ export const AboutMe = () => {
                             <button  className="aboutMe-carousel--Btn">{'Back'}</button>
                         </div>
                         <div className="aboutMe-carousel--pics">
-                            <img className="aboutMe-carousel--pic1"src="../imgs/moon.jpg" alt="" />
+                            <img className="aboutMe-carousel--pic1"src={`/imgs/carousel/${i}.jpg`} alt="" />
                         </div>
                         <div>
                             <button className="aboutMe-carousel--Btn">{'Next'}</button>
@@ -54,11 +63,11 @@ export const AboutMe = () => {
                 </NavLink>
 
                 <NavLink to={{pathname:"https://linkedin.com/in/ionut-radu-padurariu-13688991"}} target="_blank">
-                    <img className="icons" height={50} src={IconLinkedin} alt="logo" />             
+                    <img className="icons" height={50} src={IconLinkedin} alt="logo" style={{background: "white", borderRadius:50}}/>             
                 </NavLink>
                
-                <NavLink to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank">
-                    <img className="icons" height={50} src={IconGithub} alt="logo" />             
+                <NavLink to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank"  >
+                    <img className="icons" height={50} src={IconGithub} alt="logo" style={{background: "white", borderRadius:50}} />             
                 </NavLink>
             </div>
         </div>

@@ -12,7 +12,8 @@
     color:#edf6f9;
     font-size: 40px;
     margin-top: 120px;
-    margin-bottom:80px
+    margin-bottom:80px;
+    text-align: center;
 }
 
 .me {
@@ -131,4 +132,29 @@
     }
 .contact--validation-send {
     display:none;
+}
+
+@media (max-width:600px) {
+    .contact-form {
+        width:80%;
+        justify-content: center;
+    }
+    .contact--btn-container {
+        display:block;
+    }
+    .contact--label-container {
+        display:none;
+    }
+    .contact--input-container {
+        text-align: center;
+    }
+    .contact--btn {
+        margin:10px;
+    }
+}
+
+@media (max-width:370px) {
+    .contact-header {
+        font-size: 30px;
+    }
 }

@@ -1,4 +1,6 @@
-import "./Projects.css"
+import { NavLink } from "react-router-dom";
+import "./Projects.css";
+import IconGithub from "../Icons/github.svg";
 
 export const Projects = () => {
     return (
@@ -8,7 +10,7 @@ export const Projects = () => {
             </div>
             <div className="projects-container">
 
-                <div className="projects-myProjects">
+                <NavLink to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank" className="projects-myProjects">
                     <div className="projects-image--container">
                         <div className="projects-image--planetary">
 
@@ -20,9 +22,12 @@ export const Projects = () => {
                     <div className="projects-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis tempore, possimus culpa quae blanditiis mollitia odit voluptas consequatur. Iusto officia, quisquam ab accusantium adipisci exercitationem nihil doloremque porro eum?
                     </div>
-                </div>
+                    <div className="projects-container--githubLink">
+                        <img className="icons-project" height={50} src={IconGithub} alt="logo"/>  
+                    </div>
+                </NavLink>
 
-                <div className="projects-myProjects">
+                <NavLink to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank" className="projects-myProjects">
                     <div className="projects-image--container">
                         <div className="projects-image--proportions">
                             <div className="eyes"></div>
@@ -35,9 +40,12 @@ export const Projects = () => {
                     <div className="projects-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis tempore, possimus culpa quae blanditiis mollitia odit voluptas consequatur. Iusto officia, quisquam ab accusantium adipisci exercitationem nihil doloremque porro eum?
                     </div>
-                </div>
+                    <div className="projects-container--githubLink">
+                        <img className="icons-project" height={50} src={IconGithub} alt="logo"/>  
+                    </div>
+                </NavLink>
 
-                <div className="projects-myProjects">
+                <NavLink to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank" className="projects-myProjects">
                     <div className="projects-image--container">
                         <div className="projects-image--simulator">
                             <img className="projects-image--gameSimulator" src="../imgs/cutie.jpg" alt="pic" />
@@ -49,7 +57,10 @@ export const Projects = () => {
                     <div className="projects-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis tempore, possimus culpa quae blanditiis mollitia odit voluptas consequatur. Iusto officia, quisquam ab accusantium adipisci exercitationem nihil doloremque porro eum?
                     </div>
-                </div>
+                    <div className="projects-container--githubLink">
+                        <img className="icons-project" height={50} src={IconGithub} alt="logo"/>  
+                    </div>
+                </NavLink>
             </div>
         </div>
     )

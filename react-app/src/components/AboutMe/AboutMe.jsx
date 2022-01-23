@@ -4,6 +4,12 @@ import IconFacebook from "../Icons/facebook.svg";
 import IconLinkedin from "../Icons/linkedin.svg";
 import IconGithub from "../Icons/github.svg";
 import {useEffect, useState} from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebook,
+    faGithub,
+    faLinkedin,
+  } from "@fortawesome/free-brands-svg-icons";
 
 
 export const AboutMe = () => {
@@ -24,14 +30,14 @@ export const AboutMe = () => {
             <div className="aboutMe-container">
                 <div className="aboutMe-description">
                     <div className="aboutMe-description--title">
-                        <h3> I'm Radu and <span className="aboutMe-description--title-coding">I love Coding</span></h3>
+                        <p> I'm Radu and <span className="aboutMe-description--title-coding">I love Coding</span></p>
                     </div>
                     <div className="aboutMe-description--paragraph">
                         <p>I'm an enthusiastic and detail-oriented junior Front end Developer. I am a person fascinated by technology, future, AI and space. My passion for informatics came from childhood when I decided to go to Informatics School. I like to create all kind of individual projects with React and Java Script. But the most I like to code and develop my skills every day with a team to share experience with others. My goal is to become a full time Front-End Web-Developer because I like to see immediate results of my work.</p>
                     </div>
                 
                     <div className="aboutMe-description--downloadResume">
-                        <a className= "aboutMe-description--downloadBtn" title="" target="_blank" href="/download/radupadurariuresume.pdf" download={"/download/radupadurariuresume.pdf"}>
+                        <a className= "aboutMe-description--downloadBtn" title="" href="/download/radupadurariuresume.pdf" target="_blank" >
                             Download Resume    
                         </a>
                     </div>
@@ -58,16 +64,16 @@ export const AboutMe = () => {
             </div>
 
             <div className="aboutMe-social">
-                <NavLink to={{pathname:"https://www.facebook.com/padugeolog"}} target="_blank">
-                    <img className="icons" height={50} src={IconFacebook} alt="logo" />             
+                <NavLink className="icons-container" to={{pathname:"https://www.facebook.com/padugeolog"}} target="_blank">
+                    <img className="icons-social" height={50} src={IconFacebook} alt="logo" />             
                 </NavLink>
 
-                <NavLink to={{pathname:"https://linkedin.com/in/ionut-radu-padurariu-13688991"}} target="_blank">
-                    <img className="icons" height={50} src={IconLinkedin} alt="logo" style={{background: "white", borderRadius:50}}/>             
+                <NavLink className="icons-container" to={{pathname:"https://linkedin.com/in/ionut-radu-padurariu-13688991"}} target="_blank">
+                    <img className="icons-social" height={50} src={IconLinkedin} alt="logo" />             
                 </NavLink>
                
-                <NavLink to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank"  >
-                    <img className="icons" height={50} src={IconGithub} alt="logo" style={{background: "white", borderRadius:50}} />             
+                <NavLink className="icons-container" to={{pathname:"https://github.com/RaduPadurariu"}} target="_blank"  >
+                    <img className="icons-social" height={50} src={IconGithub} alt="logo"/>             
                 </NavLink>
             </div>
         </div>

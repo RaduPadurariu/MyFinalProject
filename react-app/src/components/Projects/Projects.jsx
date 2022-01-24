@@ -20,7 +20,7 @@ export const Projects = () => {
                         Planetary <span className="project-title--color1">Geology</span>
                     </div>
                     <div className="projects-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis tempore, possimus culpa quae blanditiis mollitia odit voluptas consequatur. Iusto officia, quisquam ab accusantium adipisci exercitationem nihil doloremque porro eum?
+                        This website contain data and pictures about our planets from the Solar System including dwarf planets from the Kuiper Belt . Astronomy is one of my favorite hobby. The project was made with React library and can be found on my Github account.
                     </div>
                     <div className="projects-container--githubLink">
                         <img className="icons-project" height={50} src={IconGithub} alt="logo"/>  
@@ -38,7 +38,7 @@ export const Projects = () => {
                         Ideal man <span className="project-title--color2">Proportions</span>
                     </div>
                     <div className="projects-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis tempore, possimus culpa quae blanditiis mollitia odit voluptas consequatur. Iusto officia, quisquam ab accusantium adipisci exercitationem nihil doloremque porro eum?
+                        This website is an application to monitor your muscle measurements comparing with ideal ones proposed by the ancient greeks, only using your wrist and knee circumference. The project was made with React library and can be found on my Github account.
                     </div>
                     <div className="projects-container--githubLink">
                         <img className="icons-project" height={50} src={IconGithub} alt="logo"/>  
@@ -55,7 +55,7 @@ export const Projects = () => {
                         Blockchain Cuties <div className="project-title--color3">Game Simulator</div>
                     </div>
                     <div className="projects-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis tempore, possimus culpa quae blanditiis mollitia odit voluptas consequatur. Iusto officia, quisquam ab accusantium adipisci exercitationem nihil doloremque porro eum?
+                        The website tries to replicate the battle mechanics in Blockchain Cuties which is a NFT game. You can simulate multiple battles at once without having to pay with real crypto. The project was made with Java Script and can be found on my Github account.
                     </div>
                     <div className="projects-container--githubLink">
                         <img className="icons-project" height={50} src={IconGithub} alt="logo"/>  

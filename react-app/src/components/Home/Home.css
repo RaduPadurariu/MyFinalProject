@@ -11,7 +11,7 @@
     text-align: right;
     margin-right:150px;
     flex:1;
-
+    animation: slideIn 1s ease forwards;
 }
 
 .container-description {

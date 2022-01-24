@@ -10,7 +10,7 @@ export const Home = () => {
             </div> 
             <div className="container-description">
                 <p className="heading-paragraph">
-                    <Typical className="auto-type" steps={["Hello traveler ...", 1500]} loop={Infinity} wrapper="b"/>
+                    <Typical className="auto-type" steps={[" ", 1000, "Hello traveler ...", 1500]} loop={1} wrapper="b"/>
                 </p>
                 <div className="headings">
                     <p className="heading2">Radu</p>

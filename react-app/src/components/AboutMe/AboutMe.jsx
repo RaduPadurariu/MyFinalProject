@@ -4,22 +4,26 @@ import IconFacebook from "../Icons/facebook.svg";
 import IconLinkedin from "../Icons/linkedin.svg";
 import IconGithub from "../Icons/github.svg";
 import {useEffect, useState} from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faFacebook,
-    faGithub,
-    faLinkedin,
-  } from "@fortawesome/free-brands-svg-icons";
+
 
 
 export const AboutMe = () => {
-    const [i, changeIndex] = useState(1);
+    let [i, changeIndex] = useState(1);
+    const[nextFlag, changeNextFlag] = useState(true);
+    
     console.log(i);
 
-    // useEffect = (() => {
-    //     console.log('test');
-    // }, []);
+    const nextPicture = (() => {
+        i = i + 1;
+        changeIndex(i);
+        console.log(i);
+    });
 
+    const previousPicture = (() => {
+        i = i - 1;
+        changeIndex(i);
+        console.log(i);
+    });
 
     return (
         <div className="aboutMe">
@@ -50,13 +54,13 @@ export const AboutMe = () => {
 
                     <div className="aboutMe-carousel--container">
                         <div>
-                            <button  className="aboutMe-carousel--Btn">{'Back'}</button>
+                            <button  className="aboutMe-carousel--Btn" disabled={ i <= 1 ? true : false} onClick={previousPicture}>{'Back'}</button>
                         </div>
                         <div className="aboutMe-carousel--pics">
                             <img className="aboutMe-carousel--pic1"src={`/imgs/carousel/${i}.jpg`} alt="" />
                         </div>
                         <div>
-                            <button className="aboutMe-carousel--Btn">{'Next'}</button>
+                            <button className="aboutMe-carousel--Btn" disabled={ i >=10 ? true : false} onClick={nextPicture}>{'Next'}</button>
                         </div>
                     </div>
 

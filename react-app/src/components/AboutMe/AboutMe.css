@@ -96,7 +96,7 @@
 }
 .aboutMe-carousel--pic1 {
     max-width: 500px;
-    max-height: 500px;
+    max-height: 700px;
     border-radius: 20px;
 }
 
@@ -107,7 +107,11 @@
     background-color: transparent;
     border: none;
     margin:20px;
-    font-weight: bold;
+    cursor: pointer;
+}
+
+.aboutMe-carousel--Btn:hover {
+    border-bottom: 1px solid black;
 }
 
 .aboutMe-social {

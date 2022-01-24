@@ -4,31 +4,60 @@ import {useEffect, useState} from "react";
 
 export const Contact = () => {
    
-    const [nameValue, setNameValue] = useState(false);
-    const [emailValue, setEmailValue] = useState(false);
-    const [messageValue, setMessageValue] = useState(false);
+    const [nameValue, setNameValue] = useState("");
+    const [checkNameText, changeNameText] = useState("");
+
+    const [emailValue, setEmailValue] = useState("");
+    const [checkEmailText, changeEmailText] = useState("");
+
+    const [messageValue, setMessageValue] = useState("");
+    const [checkMessageText, changeMessageText] = useState("");
+
     const [check, setCheck] = useState("");
 
+    const emailRegex = RegExp(/.+@+./);
+    
+
     const nameChange = (event) => {
+        if(event.target.value !=="") {
+            changeNameText(false);
+        }
+        else changeNameText(true);
+  
         setNameValue(event.target.value);
         setCheck("");
     }
 
     const emailChange = (event) => {
+        if(emailRegex.test(event.target.value)) {
+            changeEmailText(false);
+        }
+        else changeEmailText(true);
+
         setEmailValue(event.target.value);
         setCheck("");
+ 
+        
     }
 
     const messageChange = (event) => {
+        if(event.target.value !=="") {
+            changeMessageText(false);
+        }
+        else changeMessageText(true);
+
         setMessageValue(event.target.value);
         setCheck("");
     }
     const validation = () => {
-        if((nameValue !=="" && nameValue !== false) && (emailValue !=="" && emailValue !==false) && (messageValue !=="" && messageValue !==false)) {
+        if((nameValue !=="" && nameValue !== false) && (emailRegex.test(emailValue)) && (messageValue !=="" && messageValue !==false)) {
             setCheck(true);
+            setNameValue("");
+            setEmailValue("");
+            setMessageValue("");
         }
         else setCheck(false);
-
+        
     }  
 
     return (
@@ -41,22 +70,22 @@ export const Contact = () => {
                     <label className="label-message"  htmlFor="message"> Message -</label>
                 </div>
                 <div className="contact--input-container">
-                    <input  id="name" type="text" placeholder="type name" onChange={nameChange}/>
+                    <input  id="name" type="text" placeholder="type name" value={nameValue} onChange={nameChange} />
                     <div className="contact--validation-container">
-                        <div className={`contact--validation ${nameValue==="" ? "" : " contact--validation-none"}`} >Please enter your name</div>
+                        <div className={`contact--validation ${checkNameText===true ? "" : " contact--validation-none"}`} >Please enter your name</div>
                     </div>
                     
-                    <input id="email"   type="text" placeholder="type email" onChange={emailChange}/>
+                    <input id="email"   type="text" placeholder="type email" value={emailValue} onChange={emailChange} />
                     <div className="contact--validation-container">
-                        <div className={`contact--validation ${emailValue==="" ? "" : " contact--validation-none"}`}>Please enter a valid email</div>
+                        <div className={`contact--validation ${checkEmailText===true ? "" : " contact--validation-none"}`}>Please enter a valid email</div>
                     </div>
                     
 
                     <div className="contact--btn-container">
                         <div>
-                            <textarea id="message"  className="contact--text-container"  type="text-area" placeholder="type message" onChange={messageChange}/> 
+                            <textarea id="message"  className="contact--text-container"  type="text-area" placeholder="type message" value={messageValue} onChange={messageChange}/> 
                             <div className="contact--validation-container">
-                                <div className={`contact--validation ${messageValue==="" ? "" : " contact--validation-none"}`}>Please enter some message</div>
+                                <div className={`contact--validation ${checkMessageText===true ? "" : " contact--validation-none"}`}>Please enter some message</div>
                             </div>
                             <div className="contact--validation-container">
                                 <div className={`contact--validation-total ${check===true ? "" : " contact--validation-send"}`}> 

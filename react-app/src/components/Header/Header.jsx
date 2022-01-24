@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <div className="header">
             <Logo path="/content"/>
-            <Navigation/>
+            <Navigation/>    
         </div>
     );
 }

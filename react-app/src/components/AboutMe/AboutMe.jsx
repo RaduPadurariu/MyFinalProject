@@ -3,26 +3,24 @@ import "./AboutMe.css";
 import IconFacebook from "../Icons/facebook.svg";
 import IconLinkedin from "../Icons/linkedin.svg";
 import IconGithub from "../Icons/github.svg";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 
 
 export const AboutMe = () => {
     let [i, changeIndex] = useState(1);
-    const[nextFlag, changeNextFlag] = useState(true);
-    
-    console.log(i);
 
+    
     const nextPicture = (() => {
         i = i + 1;
         changeIndex(i);
-        console.log(i);
+        
     });
 
     const previousPicture = (() => {
         i = i - 1;
         changeIndex(i);
-        console.log(i);
+       
     });
 
     return (

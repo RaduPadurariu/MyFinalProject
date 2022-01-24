@@ -12,3 +12,9 @@
 /* .logo img:hover {
     border:1px solid #4cc9f0;
 } */
+
+@media (max-width:750px) {
+    .logo {
+        margin:0 0 0 10px;
+    }
+}

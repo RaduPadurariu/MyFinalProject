@@ -8,10 +8,7 @@ export const NavButton = (props) => {
                 activeClassName="nav-button--active"
                 className= "nav-button" 
                 to={props.path}>
-                    {props.label}
-                            
-            </NavLink> 
-       
-        
+                    {props.label}           
+            </NavLink>  
     );
 }

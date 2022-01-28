@@ -19,8 +19,9 @@
 
 .skills-container {
     display:flex;   
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
+
 .skills-data {
     display:flex;
     flex-direction: column;
@@ -35,7 +36,6 @@
 }
 
 .my {
-   
     color: #4ccaf0d0;
 }
 
@@ -45,8 +45,7 @@
     flex-direction: column;
     justify-content: space-around;
     color: #edf6f9;
-    margin: 50px 0 50px 20px;
-    
+    margin: 50px 0 50px 20px; 
 }
 
 .skills-bar--progress {

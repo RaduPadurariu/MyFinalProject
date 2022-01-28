@@ -4,7 +4,7 @@ import { NavButton } from "./NavButton/NavButton";
 import "./Navigation.css"
 
 export const Navigation = () => {
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
     
     const changeMenuState = (() => {
         setActive(!active) ;

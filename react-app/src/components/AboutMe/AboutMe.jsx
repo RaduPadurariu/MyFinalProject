@@ -5,8 +5,6 @@ import IconLinkedin from "../Icons/linkedin.svg";
 import IconGithub from "../Icons/github.svg";
 import {useState} from "react";
 
-
-
 export const AboutMe = () => {
     let [i, changeIndex] = useState(1);
 
@@ -51,13 +49,13 @@ export const AboutMe = () => {
                     </div>
 
                     <div className="aboutMe-carousel--container">
-                        <div>
+                        <div className="aboutMe-carousel--Btn-container">
                             <button  className="aboutMe-carousel--Btn" disabled={ i <= 1 ? true : false} onClick={previousPicture}>{'Back'}</button>
                         </div>
                         <div className="aboutMe-carousel--pics">
-                            <img className="aboutMe-carousel--pic1"src={`/imgs/carousel/${i}.jpg`} alt="" />
+                            <img className="aboutMe-carousel--picture"src={`/imgs/carousel/${i}.jpg`} alt="" />
                         </div>
-                        <div>
+                        <div className="aboutMe-carousel--Btn-container">
                             <button className="aboutMe-carousel--Btn" disabled={ i >=10 ? true : false} onClick={nextPicture}>{'Next'}</button>
                         </div>
                     </div>

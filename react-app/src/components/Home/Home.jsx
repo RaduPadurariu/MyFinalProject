@@ -19,8 +19,7 @@ export const Home = () => {
                 </div>
                 <div className="contact-btn-container">
                         <NavLink className= "contact-btn-homepage" to="contact">
-                            Contact
-                                
+                            Contact             
                         </NavLink>
                     </div>
                 

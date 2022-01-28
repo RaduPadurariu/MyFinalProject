@@ -80,7 +80,6 @@ export const Contact = () => {
                         <div className={`contact--validation ${checkEmailText===true ? "" : " contact--validation-none"}`}>Please enter a valid email</div>
                     </div>
                     
-
                     <div className="contact--btn-container">
                         <div>
                             <textarea id="message"  className="contact--text-container"  type="text-area" placeholder="type message" value={messageValue} onChange={messageChange}/> 
